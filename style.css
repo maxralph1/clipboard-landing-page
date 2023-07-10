@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --light-grayish-blue: hsl(202, 21%, 93%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+header {
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position-y: -85px;
+}
+header img {
+  width: 32%;
+  margin: 2em auto 3.5em;
+}
+header h1 {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto 1em;
+}
+header p {
+  font-size: 0.85rem;
+  width: 85%;
+  margin: 0 auto 2em;
+}
+header .cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+header .cta .btn {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  padding: 1em 4.5em;
+  border-radius: 25px;
+  margin: 0.75em auto;
+}
+header .cta .btn:hover {
+  opacity: 0.85;
+}
+header .cta .iOS {
+  background-color: var(--strong-cyan);
+  box-shadow: 0 1px 7.5px var(--strong-cyan);
+}
+header .cta .mac {
+  background-color: var(--light-blue);
+  box-shadow: 0 1px 7.5px var(--light-blue);
+}
+
+main .snippets {
+  margin: 7.5em auto 0;
+}
+main .snippets .sub-heading {
+  width: 80%;
+  margin: 0 auto 0.75em;
+}
+main .snippets .description {
+  font-size: 0.85rem;
+  width: 80%;
+  margin: 0 auto 2em;
+  line-height: 1.5;
+}
+main .computer .img {
+  margin: 3.5em auto 2.75em;
+}
+main .computer .img img {
+  width: 82.5%;
+  margin: 0 auto;
+}
+main .computer .services {
+  margin: 0 auto 10em;
+}
+main .computer .services .service {
+  margin: 0 auto 2.5em;
+}
+main .computer .services .service .sub-heading {
+  font-size: 1.2rem;
+  margin: 0 auto 0.4em;
+}
+main .computer .services .service .description {
+  font-size: 0.85rem;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+main .clipboard-anywhere {
+  width: 90%;
+  margin: 0 auto 4.5em;
+  display: block;
+}
+main .clipboard-anywhere .sub-heading {
+  width: 80%;
+  margin: 0 auto;
+}
+main .clipboard-anywhere .description {
+  font-size: 0.85rem;
+  width: 90%;
+  margin: 1em auto;
+  line-height: 1.6;
+}
+main .clipboard-anywhere img {
+  width: 100%;
+  margin: 2.5em auto;
+}
+main .workflow-section {
+  width: 90%;
+  margin: 0 auto;
+}
+main .workflow-section .intro .sub-heading {
+  width: 80%;
+  margin: 0 auto;
+}
+main .workflow-section .intro .description {
+  font-size: 0.85rem;
+  width: 90%;
+  margin: 0.5em auto;
+  line-height: 1.6;
+}
+main .workflow-section .workflows .workflow {
+  margin: 3em 0;
+}
+main .workflow-section .workflows .workflow img {
+  width: 12%;
+}
+main .workflow-section .workflows .workflow .sub-heading {
+  margin: 1.75em 0 1em;
+}
+main .workflow-section .workflows .workflow .description {
+  font-size: 0.85rem;
+  width: 85%;
+  margin: 0.5em auto;
+  line-height: 1.6;
+}
+main .brands {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 7em auto 10em;
+  gap: 3.5em;
+}
+main .clipboard-devices {
+  width: 90%;
+  margin: 0 auto;
+}
+main .clipboard-devices .sub-heading {
+  width: 80%;
+  margin: 0 auto;
+}
+main .clipboard-devices .description {
+  font-size: 0.85rem;
+  width: 90%;
+  margin: 1em auto;
+  line-height: 1.6;
+}
+main .clipboard-devices .cta {
+  display: flex;
+  flex-direction: column;
+}
+main .clipboard-devices .cta .btn {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  padding: 1em 4.5em;
+  border-radius: 25px;
+  margin: 0.75em auto;
+}
+main .clipboard-devices .cta .btn:hover {
+  opacity: 0.85;
+}
+main .clipboard-devices .cta .iOS {
+  background-color: var(--strong-cyan);
+  box-shadow: 0 1px 7.5px var(--strong-cyan);
+}
+main .clipboard-devices .cta .mac {
+  background-color: var(--light-blue);
+  box-shadow: 0 1px 7.5px var(--light-blue);
+}
+
+footer {
+  background-color: var(--light-grayish-blue);
+  margin-top: 9em;
+  padding: 3em 0 3em;
+}
+footer .footer-proper {
+  padding: 0 0 3em;
+}
+footer .footer-proper .logo {
+  margin: 0 0 1.75em;
+}
+footer .footer-proper .logo img {
+  width: 12.5%;
+}
+footer .footer-proper .site-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+  margin-bottom: 2.5em;
+}
+footer .footer-proper .site-links * {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+}
+footer .footer-proper .socials * {
+  width: 6%;
+  margin: 0 0.5em;
+}
+footer .acknowledgements {
+  font-size: 0.75rem;
+}
+footer .acknowledgements .attribution {
+  text-align: center;
+}
+footer .acknowledgements .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 375px) {
+  header {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header, main, footer {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  header {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+  }
+  header img {
+    width: 7.5%;
+    margin: 6em auto 2.5em;
+  }
+  header h1 {
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto 0.5em;
+  }
+  header p {
+    font-size: 0.85rem;
+    width: 35%;
+    margin: 0 auto 2em;
+  }
+  header .cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25%;
+    margin: 0 auto;
+  }
+  header .cta .btn {
+    font-size: 0.75rem;
+    padding: 1em 2.15em;
+    margin: 0.75em auto;
+  }
+  main .snippets {
+    margin: 5.5em auto 0;
+  }
+  main .snippets .sub-heading {
+    width: 80%;
+    margin: 0 auto 0.75em;
+  }
+  main .snippets .description {
+    font-size: 0.85rem;
+    width: 40%;
+    margin: 0 auto 2em;
+    line-height: 1.5;
+  }
+  main .computer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -175px;
+  }
+  main .computer .services {
+    text-align: left;
+    margin: unset;
+  }
+  main .computer .services .service .sub-heading {
+    font-size: 1.2rem;
+    margin: 0 auto 0.4em;
+  }
+  main .computer .services .service .description {
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.6;
+  }
+  main .clipboard-anywhere {
+    width: 90%;
+    margin: 4em auto 0;
+    display: block;
+  }
+  main .clipboard-anywhere .description {
+    font-size: 0.9rem;
+    width: 45%;
+    margin: 1em auto;
+  }
+  main .clipboard-anywhere img {
+    width: 60%;
+    margin: 3em auto 0;
+  }
+  main .workflow-section {
+    width: 90%;
+    margin: 2em auto;
+  }
+  main .workflow-section .intro .sub-heading {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .workflow-section .intro .description {
+    font-size: 0.85rem;
+    width: 90%;
+    margin: 1em auto;
+    line-height: 1.6;
+  }
+  main .workflow-section .workflows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .workflow-section .workflows .workflow img {
+    width: 7%;
+    margin-bottom: 1.5em;
+  }
+  main .workflow-section .workflows .workflow .sub-heading {
+    margin: 0 1em 0.5em;
+  }
+  main .workflow-section .workflows .workflow .description {
+    font-size: 0.85rem;
+    width: 85%;
+    margin: 0.5em auto;
+  }
+  main .brands {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+    width: 85%;
+    margin: 7em auto 10em;
+  }
+  main .clipboard-devices {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .clipboard-devices .sub-heading {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .clipboard-devices .description {
+    font-size: 0.85rem;
+    width: 40%;
+    margin: 1em auto;
+    line-height: 1.6;
+  }
+  main .clipboard-devices .cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25%;
+    margin: 1.5em auto 0;
+  }
+  main .clipboard-devices .cta .btn {
+    font-size: 0.75rem;
+    padding: 1em 2.15em;
+    margin: 0.75em auto;
+  }
+  footer {
+    margin-top: 7.5em;
+    padding: 3em 0 3em;
+  }
+  footer .footer-proper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .footer-proper .logo {
+    margin: unset;
+  }
+  footer .footer-proper .logo img {
+    width: 40%;
+  }
+  footer .footer-proper .site-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    grid-template-areas: "faq     privacy   install-guide" "contact press-kit .            ";
+    -moz-column-gap: 5em;
+         column-gap: 5em;
+    margin-left: -20em;
+    text-align: left;
+    margin-bottom: unset;
+  }
+  footer .footer-proper .site-links * {
+    font-size: 0.9rem;
+  }
+  footer .footer-proper .site-links .faq {
+    grid-area: faq;
+  }
+  footer .footer-proper .site-links .contact {
+    grid-area: contact;
+  }
+  footer .footer-proper .site-links .privacy {
+    grid-area: privacy;
+  }
+  footer .footer-proper .site-links .press-kit {
+    grid-area: press-kit;
+  }
+  footer .footer-proper .site-links .install-guide {
+    grid-area: install-guide;
+  }
+  footer .footer-proper .socials {
+    align-self: center;
+  }
+  footer .footer-proper .socials * {
+    width: 12.5%;
+    margin: 0 0.3em;
+  }
+}/*# sourceMappingURL=style.css.map */
